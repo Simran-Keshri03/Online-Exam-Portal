@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Exam Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Online Exam Portal</h1>
+
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h2>Instructions</h2>
+    <p>You have to complete all questions.</p>
+    <p>Please select an option before moving next.</p>
+    <button id="startBtn">Start Exam</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div id="quiz" class="hidden">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+
+    <div class="nav-buttons">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <!-- Result -->
+  <div id="result" class="hidden"></div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
